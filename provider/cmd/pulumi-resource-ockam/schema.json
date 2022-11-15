@@ -1,6 +1,6 @@
 {
     "name": "ockam",
-    "description": "A Pulumi package for creating and managing ockam cloud resources.",
+    "description": "A Pulumi package for creating and managing Ockam cloud resources.",
     "keywords": [
         "pulumi",
         "ockam",
@@ -8,9 +8,9 @@
     ],
     "homepage": "https://www.pulumi.com",
     "license": "Apache-2.0",
-    "attribution": "This Pulumi package is based on the [`ockam` Terraform Provider](https://github.com/terraform-providers/terraform-provider-ockam).",
-    "repository": "https://github.com/pulumi/pulumi-ockam",
-    "publisher": "Pulumi",
+    "attribution": "This Pulumi package is based on the [`ockam` Terraform Provider](https://github.com/ohlol/terraform-provider-ockam).",
+    "repository": "https://github.com/ohlol/pulumi-ockam",
+    "publisher": "ohlol",
     "meta": {
         "moduleFormat": "(.*)(?:/[^/]*)"
     },
@@ -37,14 +37,14 @@
                 "@types/node": "^10.0.0"
             },
             "disableUnionOutputTypes": true,
-            "packageDescription": "A Pulumi package for creating and managing ockam cloud resources.",
+            "packageDescription": "A Pulumi package for creating and managing Ockam cloud resources.",
             "packageName": "",
-            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/terraform-providers/terraform-provider-ockam)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-ockam` repo](https://github.com/pulumi/pulumi-ockam/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-ockam` repo](https://github.com/terraform-providers/terraform-provider-ockam/issues).",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/ohlol/terraform-provider-ockam)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-ockam` repo](https://github.com/ohlol/pulumi-ockam/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-ockam` repo](https://github.com/ohlol/terraform-provider-ockam/issues).",
             "typescriptVersion": ""
         },
         "python": {
             "compatibility": "tfbridge20",
-            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/terraform-providers/terraform-provider-ockam)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-ockam` repo](https://github.com/pulumi/pulumi-ockam/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-ockam` repo](https://github.com/terraform-providers/terraform-provider-ockam/issues).",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/ohlol/terraform-provider-ockam)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi-ockam` repo](https://github.com/ohlol/pulumi-ockam/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`terraform-provider-ockam` repo](https://github.com/ohlol/terraform-provider-ockam/issues).",
             "requires": {
                 "pulumi": "\u003e=3.0.0,\u003c4.0.0"
             }
@@ -53,5 +53,37 @@
     "config": {},
     "provider": {
         "description": "The provider type for the ockam package. By default, resources use package-wide configuration\nsettings, however an explicit `Provider` instance may be created and passed during resource\nconstruction to achieve fine-grained programmatic control over provider settings. See the\n[documentation](https://www.pulumi.com/docs/reference/programming-model/#providers) for more information.\n"
+    },
+    "resources": {
+        "ockam:index/ockamIdentity:OckamIdentity": {
+            "properties": {
+                "identity": {
+                    "type": "string",
+                    "description": "The JSON representation of the Ockam identity.\n"
+                },
+                "vault": {
+                    "type": "string",
+                    "description": "The JSON representation of the Ockam vault.\n"
+                }
+            },
+            "required": [
+                "identity",
+                "vault"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering OckamIdentity resources.\n",
+                "properties": {
+                    "identity": {
+                        "type": "string",
+                        "description": "The JSON representation of the Ockam identity.\n"
+                    },
+                    "vault": {
+                        "type": "string",
+                        "description": "The JSON representation of the Ockam vault.\n"
+                    }
+                },
+                "type": "object"
+            }
+        }
     }
 }
