@@ -19,9 +19,9 @@ package main
 import (
 	_ "embed"
 
-	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 	ockam "github.com/ohlol/pulumi-ockam/provider"
 	"github.com/ohlol/pulumi-ockam/provider/pkg/version"
+	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 )
 
 //go:embed schema-embed.json

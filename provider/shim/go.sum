@@ -4,8 +4,8 @@ github.com/apparentlymart/go-dump v0.0.0-20190214190832-042adf3cf4a0 h1:MzVXffFU
 github.com/apparentlymart/go-textseg/v12 v12.0.0/go.mod h1:S/4uRK2UtaQttw1GenVJEynmyUenKwP++x/+DdGV/Ec=
 github.com/apparentlymart/go-textseg/v13 v13.0.0 h1:Y+KvPE1NYz0xl601PVImeQfFyEy6iT90AvPUL1NNfNw=
 github.com/apparentlymart/go-textseg/v13 v13.0.0/go.mod h1:ZK2fH7c4NqDTLtiYLvIkEghdlcqw7yxLeM89kiTRPUo=
-github.com/build-trust/terraform-provider-ockam v0.71.0 h1:HfUaGIIMQX6oSkiaVkmQKIRb2Oie5an669i2Vn8LnIY=
-github.com/build-trust/terraform-provider-ockam v0.71.0/go.mod h1:DQA3FQp11v9G8ZWdXriCSCleaBHPs1wu1IEnOK6Fkrw=
+github.com/build-trust/terraform-provider-ockam v0.70.0 h1:+6lj+BBBYlz8udjj9lQ2+VJPI6+wGp8c7twnKC8im6w=
+github.com/build-trust/terraform-provider-ockam v0.70.0/go.mod h1:bb4f/m39X8PLYNWc/ZaUll+Lb5JGIAlQALiz3BGGXX8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
