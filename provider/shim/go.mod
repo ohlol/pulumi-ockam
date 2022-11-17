@@ -4,7 +4,7 @@ go 1.18
 
 require github.com/hashicorp/terraform-plugin-sdk/v2 v2.22.0
 
-require github.com/build-trust/terraform-provider-ockam v0.71.0
+require github.com/build-trust/terraform-provider-ockam v0.70.0
 
 require (
 	github.com/agext/levenshtein v1.2.2 // indirect
